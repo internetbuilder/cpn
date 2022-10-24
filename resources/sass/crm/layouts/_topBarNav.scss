@@ -1,0 +1,40 @@
+.top_container{
+  padding: 0 10px;
+  .top_wrapper{
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    .top_reduce{
+
+    }
+    .top_search{
+
+    }
+    .top_options{
+      .opt_notifs{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: /* 140px */fit-content;
+        margin: 0;
+        padding: 0;
+        .item_notif{
+          list-style: none;
+          width: 35px;
+          height: 35px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 100%;
+          background: $primary-gray;
+          position: relative;
+          .notif_href{
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}

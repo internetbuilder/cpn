@@ -1,0 +1,29 @@
+.header_wrapper{
+  background: $primary-gray !important;
+  .main_navigation{
+    .navigation_wrapper{
+      .navbar_brand{
+        .brand_logo{
+
+        }
+      }
+      .nav_button{
+        .button_toggle{
+
+        }
+      }
+
+      .nav_menu{
+        .nav_menu_wrapper{
+          .menu_item{
+            .menu_item_href{
+              color: $primary-blue;
+              font-size: 16px;
+              font-weight: 500;
+            }
+          }
+        }
+      }
+    }
+  }
+}

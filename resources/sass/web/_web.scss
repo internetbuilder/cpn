@@ -1,0 +1,11 @@
+.primary_header{
+  @import './layouts/menu';
+}
+
+.primary_body{
+  @import './pages/home';
+  @import './pages/actuality';
+  @import './pages/agenda';
+  @import './pages/confirm';
+  @import './pages/calendar';
+}

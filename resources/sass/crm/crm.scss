@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import '~bootstrap/scss/bootstrap';
+@import '~vue-toast-notification/dist/theme-sugar.css';
+@import '~vue2-timepicker/dist/VueTimepicker.css';
+@import url("//unpkg.com/element-ui@2.15.5/lib/theme-chalk/index.css");
+
+$primary-blue : #111D5E;
+$primary-red : #CE1212;
+$primary-yellow: #ffcf03;
+$primary-orange: "#f39c12";
+$primary-green: #038418;
+$primary-light: #EBECF0;
+$primary-gray: #EBECF0;
+$primary-gray2: #F2F2F2;
+$primary-gray3: #919090;
+$primary-gray4: #6c757d;
+
+
+$concrete: #95a5a6;
+$gray : #d8d7db;
+$light-gray: #f8f7fc;
+$clouds : #ecf0f1;
+$white : #ffffff;
+$black : #000000;
+
+body{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    &::-webkit-scrollbar {
+        -webkit-appearance: none;
+        width: 5px;
+        background: $primary-red;
+    }
+    &::-webkit-scrollbar-track {
+        background: $primary-blue;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: $primary-red;
+    }
+}
+
+* {
+    font-family: "Poppins", sans-serif !important;
+}
+
+.body_container{
+  .body_wrapper{
+    display: flex;
+    flex-direction: row;
+    background: $primary-gray2;
+    .leftbar_container{
+      flex: 0 0 200px;
+      box-shadow: -9px 0px 10px 0px black;
+      background: white;
+      min-height: 100vh;
+      .leftbar_wrapper{
+        height: 100%;
+        @import "./layouts/sideBarNav";
+      }
+    }
+
+    .primary_container{
+      flex: 1;
+      .primary_wrapper{
+
+        .header_container{
+          box-shadow: 10px -9px 10px 0px black;
+          width: 100%;
+          height: 50px;
+          background: white;
+          .header_wrapper{
+            @import "./layouts/topBarNav";
+          }
+        }
+
+        .main_container{
+          padding: 10px;
+          .main_wrapper{
+            @import "./pages/contact";
+            @import "./pages/extractor";
+            @import "./pages/test";
+            @import "./pages/sign";
+          }
+        }
+
+      }
+    }
+  }
+  @import "./components/mapfrench";
+}
